@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+
+  <link rel="stylesheet" href="output.css" />
+
+</head>
+<body>
+  <header>
+    <nav class="h-[80px] shadow-md bg-gray-900">
+      <div class="flex justify-end mr-9 lg:hidden">
+        <button id="hamburger" class="top-0 left-0">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-10 h-10 mt-2 ml-[60%] stroke-white
+            md:w-10 md:h-10 md:mt-2 md:ml-[680px] md:stroke-white
+            lg:w-10 lg:h-10 lg:mt-2 lg:ml-64 lg:stroke-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
+          </svg>
+        </button>
+
+      </div>
+
+      <div class="hidden absolute-left-12 top-6
+      md:hidden md:absolute md:right-12 md:top-6
+      lg:flex lg:justify-end lg:absolute lg:right-12 lg:top-6">
+        <a class="px-3 text-[18px] text-white font-semibold " href="index.html">Home</a>
+        <a class="px-3 text-[18px] text-white font-semibold " href="about.html">About</a>
+        <a class="px-3 py-1 text-[18px] text-gray-900 font-semibold bg-white rounded-md" href="contact.html">Contacts</a>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden bg-gray-200 h-fit w-full md:w-[400px] mt-4 mb-4 ml-4 relative">
+      <a href="index.html" class="block text-xl text-gray-900 animation-slide">Home</a>
+      <a href="about.html" class="block text-xl text-gray-900 animation-slide">About us</a>
+      <a href="contact.html" class="block text-xl text-gray-900 animation-slide">Contact us</a>
+    </div>
+
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('animation-slide');
+      });
+
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('animation-slide');
+          });
+        });
+    </script>
+  </header>
+  <main>
+    <section>
+      <div class="md:flex md:justify-between md:mx-16 md:mt-28
+      lg:flex lg:justify-between lg:mx-16 lg:mt-28
+      xl:flex xl:justify-between xl:mx-16 xl:mt-28">
+        <div class="md:w-[500px]
+        lg:w-[600px]
+        xl:w-[600px]">
+          <h1 class="text-3xl text-orange-500 text-center font-semibold
+          md:text-3xl md:text-orange-500 md:text-center md:font-semibold
+          lg:text-5xl lg:text-orange-500 lg:text-center lg:font-semibold
+          xl:text-5xl xl:text-orange-500 xl:text-center xl:font-semibold">Acting & brand ambassador</h1>
+          <p class="text-base text-gray-900 mx-5 my-5
+          lg:text-xl lg:text-gray-900 lg:mx-5 lg:my-5
+          xl:text-xl xl:text-gray-900 xl:mx-5 xl:my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aut rem esse eius quidem facilis ex officia consequuntur odit obcaecati illo voluptatum, dicta dignissimos qui, necessitatibus repellat expedita enim suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis omnis laboriosam aliquid in sapiente vitae harum soluta exercitationem hic facilis minima quae ratione molestiae magnam, iste doloremque repellat. Soluta, asperiores?</p>
+        </div>
+        <div>
+          <img class="md:h-[250px] md:w-[300px] md:shadow-md md:shadow-orange-500 md:rounded-full md:my-7
+          lg:h-[300px] lg:w-[400px] lg:shadow-md lg:shadow-orange-500 lg:rounded-r-full lg:my-0
+          xl:h-[300px] xl:w-[400px] xl:shadow-md xl:shadow-orange-500 xl:rounded-r-full xl:my-0" src="img/act.webp" alt="">
+        </div>
+      </div>
+      <div class="md:flex md:justify-between md:mx-16 md:mt-28
+      lg:flex lg:justify-between lg:mx-16 lg:mt-28
+      xl:flex xl:justify-between xl:mx-16 xl:mt-28">
+        <div>
+          <img class="md:h-[250px] md:w-[300px] md:shadow-md md:shadow-orange-500 md:rounded-full md:my-7
+          lg:h-[300px] lg:w-[400px] lg:shadow-md lg:shadow-orange-500 lg:rounded-l-full lg:my-0
+          xl:h-[300px] xl:w-[400px] xl:shadow-md xl:shadow-orange-500 xl:rounded-l-full xl:my-0" src="img/MC.webp">
+        </div>
+        <div class="md:w-[500px]
+        lg:w-[600px]
+        xl:w-[600px]">
+          <h1 class="text-3xl text-orange-500 text-center font-semibold
+          md:text-3xl md:text-orange-500 md:text-center md:font-semibold
+          lg:text-5xl lg:text-orange-500 lg:text-center lg:font-semibold
+          xl:text-5xl xl:text-orange-500 xl:text-center xl:font-semibold">Stand up comedy & MC</h1>
+          <p class="text-base text-gray-900 mx-5 my-5
+          md:text-base md:text-gray-900 md:mx-5 md:my-5
+          lg:text-xl lg:text-gray-900 lg:mx-5 lg:my-5
+          xl:text-xl xl:text-gray-900 xl:mx-5 xl:my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aut rem esse eius quidem facilis ex officia consequuntur odit obcaecati illo voluptatum, dicta dignissimos qui, necessitatibus repellat expedita enim suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis omnis laboriosam aliquid in sapiente vitae harum soluta exercitationem hic facilis minima quae ratione molestiae magnam, iste doloremque repellat. Soluta, asperiores?</p>
+        </div>
+      </div>
+      <div>
+        <div class="md:w-[500px] md:mt-28 md:mx-auto
+        lg:w-[600px] lg:mt-28 lg:mx-auto
+        xl:w-[600px] xl:mt-28 xl:mx-auto">
+          <h1 class="text-3xl text-orange-500 text-center font-semibold
+          md:text-3xl md:text-orange-500 md:text-center md:font-semibold
+          lg:text-5xl lg:text-orange-500 lg:text-center lg:font-semibold
+          xl:text-5xl xl:text-orange-500 xl:text-center xl:font-semibold">Philanthropic</span> work</h1>
+          <p class="text-base text-gray-900 mx-5 my-5
+          md:text-base md:text-gray-900 md:mx-5 md:my-5
+          lg:text-xl lg:text-gray-900 lg:mx-5 lg:my-5
+          xl:text-xl xl:text-gray-900 xl:mx-5 xl:my-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto suscipit dolorem et quasi, perspiciatis dolore ullam vel, nam porro consequuntur ea autem laboriosam, sequi voluptas. Ipsum ab minima quaerat eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur placeat dolorem asperiores soluta alias odio nostrum. Saepe magni, iure commodi, impedit dignissimos magnam fuga consectetur officia hic eum sunt unde?</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="bg-gray-900">
+      <article class="max-w-[1000px] mx-auto py-16">
+        <div class="flex flex-col items-center">
+          <div class="flex space-x-4 items-center">
+            
+
+            <p class="text-sm font-semibold text-white">Bofihla Neko - Lilaphalapha</p>
+          </div>
+        </div>
+
+        <div class="mt-5 text-center">
+          <p class="text-white">
+            &quot; Worthwhile Services for
+            <span class="text-orange-500 font-semibold">Personal</span> /
+            <span class="text-orange-500 font-semibold">Businesses'</span>
+            needs &quot;
+          </p>
+        </div>
+
+        <div class="mt-10 flex flex-col space-x-4 items-center">
+          <h1 class="text-xl font-semibold mb-4 text-white">Quick links</h1>
+
+          <ul class="flex space-x-6">
+            <li
+              class="hover:text-blue-600 transition-colors duration-300 ease-in-out">
+              <a class="text-white" href="./pages/terms.html">T's &amp; C's</a>
+            </li>
+            <li
+              class="hover:text-blue-600 transition-colors duration-300 ease-in-out">
+              <a class="text-white" href="./pages/disclaimer.html">Disclaimer</a>
+            </li>
+            <li
+              class="hover:text-blue-600 transition-colors duration-300 ease-in-out">
+              <a class="text-white" href="./pages/privacy.html">Privacy Policy</a>
+            </li>
+            <li
+              class="hover:text-blue-600 transition-colors duration-300 ease-in-out">
+              <a class="text-white" href="./pages/cookies.html">Cookies Policy</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="bg-gray-950 p-2">
+        <p class="text-center text-white font-semibold text-sm">
+          Lilaphalapha <span class="text-orange-500">&copy;</span>
+          <span class="year">2024</span>. <span>All Rights Reserved</span>
+        </p>
+      </article>
+    </section>
+  </footer>
+  
+</body>
+</html>
